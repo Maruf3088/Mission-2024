@@ -96,6 +96,7 @@ html {
 .s-1-cards-container {
   display: flex;
   justify-content: space-between;
+  
 }
 .s-1-card {
   width: 30%;
@@ -114,6 +115,9 @@ html {
 .s-1-card-title {
   font-size: 24px;
   font-weight: 600;
+}
+.s-1-card-img{
+    width: 100%;
 }
 .s-1-card-img img {
   width: 50%;
