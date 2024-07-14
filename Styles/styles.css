@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +9,7 @@
 }
 :root {
   --font-1: "Yeseva One", serif;
+  --font-2: "Lobster", sans-serif;
 }
 body,
 html {
@@ -27,6 +28,14 @@ html {
   border: 1px solid rgb(255, 89, 89);
   outline: none;
   color: white;
+  border-radius: 5px;
+  transition: all .3s ease;
+}
+.btn:hover {
+  
+  background-color: rgb(226, 226, 226);
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
   border-radius: 5px;
 }
 .header-container {
@@ -96,7 +105,6 @@ html {
 .s-1-cards-container {
   display: flex;
   justify-content: space-between;
-  
 }
 .s-1-card {
   width: 30%;
@@ -110,14 +118,13 @@ html {
 .s-1-card:hover {
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2), -4px 4px 5px rgba(0, 0, 0, 0.2),
     4px -4px 5px rgba(0, 0, 0, 0.2), -4px -4px 5px rgba(0, 0, 0, 0.2);
- 
 }
 .s-1-card-title {
   font-size: 24px;
   font-weight: 600;
 }
-.s-1-card-img{
-    width: 100%;
+.s-1-card-img {
+  width: 100%;
 }
 .s-1-card-img img {
   width: 50%;
@@ -130,4 +137,189 @@ html {
 }
 .c-3 {
   background-color: rgb(255, 244, 214);
+}
+/*
+*Section-2
+*/
+
+.section-2 {
+  margin-top: 30px;
+
+  margin-bottom: 90px;
+}
+.s-2-features-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.s-2-feature-1 {
+  display: flex;
+  gap: 80px;
+}
+
+.s-2-feature-1-left {
+  width: 35%;
+}
+.s-2-feature-1-left {
+  position: relative;
+}
+.shape-1 {
+  position: absolute;
+  top: 70px;
+  left: -110px;
+  z-index: 0;
+  width: 70%;
+}
+.feature-img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.s-2-feature-1-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.s-2-feature-1-right-btn {
+  align-self: flex-start;
+  padding: 10px 30px;
+}
+.s-2-feature-1-right-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+/*--------------------------------------------------------------------------*/
+.s-2-feature-2 {
+  display: flex;
+  gap: 80px;
+}
+
+.s-2-feature-2-left {
+  width: 35%;
+}
+.s-2-feature-2-left {
+  position: relative;
+}
+.shape-2 {
+  position: absolute;
+  top: 190px;
+  right: -110px;
+  z-index: 0;
+  width: 70%;
+}
+.feature-2-img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.s-2-feature-2-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.s-2-feature-2-right-btn {
+  align-self: flex-start;
+  padding: 10px 30px;
+}
+.s-2-feature-2-right-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+/*--------------------------------------------------------------------------*/
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-bottom: 30px;
+}
+.section-3 span {
+  color: rgb(255, 173, 90);
+}
+.section-3-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+.section-3-container {
+  display: flex;
+}
+.section-3-left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.s-3-img {
+  width: 80%;
+  position: relative;
+  z-index: 1;
+}
+.shape-3 {
+  position: absolute;
+  width: 35%;
+  top: -30px;
+  left: 0;
+  z-index: 0;
+}
+.shape-4 {
+  position: absolute;
+  width: 20%;
+  bottom: 120px;
+  right: 40px;
+}
+.shape-5 {
+  position: absolute;
+  width: 20%;
+  bottom: 10px;
+  left: 40px;
+}
+
+.section-3-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.s-3-right-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+.s-3-right-btn {
+  align-self: flex-start;
+}
+
+/*
+*footer section
+*/
+footer {
+  height: 20%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-title {
+  font-family: var(--font-2);
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+}
+.footer-span {
+  font-family: var(--font-2);
+  color: rgb(255, 89, 89);
+}
+.footer-paragraph {
+  font-size: 14px;
+  color: white;
 }
