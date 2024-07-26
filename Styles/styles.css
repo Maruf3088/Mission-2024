@@ -11,6 +11,9 @@
   --font-1: "Yeseva One", serif;
   --font-2: "Lobster", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 body,
 html {
   width: 100%;
@@ -29,7 +32,7 @@ html {
   outline: none;
   color: white;
   border-radius: 5px;
-  transition: all .3s ease;
+  transition: background-color .3s ease;
 }
 .btn:hover {
   
@@ -40,6 +43,7 @@ html {
 }
 .header-container {
   display: flex;
+  height: 100vh;
 }
 .header-left {
   width: 65%;
@@ -78,6 +82,9 @@ html {
 }
 .header-right {
   width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-right img {
   max-width: 100%;
@@ -94,7 +101,8 @@ html {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 20px;
+  margin-top: 150px;
+  height: 100vh;
 }
 .section-1-title {
   text-align: center;
@@ -113,7 +121,7 @@ html {
   flex-direction: column;
   gap: 10px;
   border-radius: 26px;
-  transition: all 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 .s-1-card:hover {
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2), -4px 4px 5px rgba(0, 0, 0, 0.2),
@@ -142,11 +150,7 @@ html {
 *Section-2
 */
 
-.section-2 {
-  margin-top: 30px;
 
-  margin-bottom: 90px;
-}
 .s-2-features-container {
   display: flex;
   flex-direction: column;
@@ -155,10 +159,14 @@ html {
 .s-2-feature-1 {
   display: flex;
   gap: 80px;
+  height: 100vh;
 }
 
 .s-2-feature-1-left {
   width: 35%;
+  display: flex;
+  justify-content: c;
+  align-items: center;
 }
 .s-2-feature-1-left {
   position: relative;
@@ -195,10 +203,14 @@ html {
 .s-2-feature-2 {
   display: flex;
   gap: 80px;
+  height: 100vh;
 }
 
 .s-2-feature-2-left {
   width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .s-2-feature-2-left {
   position: relative;
@@ -236,7 +248,9 @@ html {
   display: flex;
   flex-direction: column;
   gap: 80px;
-  margin-bottom: 30px;
+  height: 100vh;
+  padding-top: 40px ;
+ 
 }
 .section-3 span {
   color: rgb(255, 173, 90);
@@ -301,6 +315,7 @@ html {
 *footer section
 */
 footer {
+  margin-top: 100px;
   height: 20%;
   background-color: black;
   display: flex;
