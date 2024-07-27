@@ -29,8 +29,8 @@ tl2.from(".s-1-cards-container div", {
     trigger: ".section-1",
     scroller: "body",
     // markers: true,
-    start: "top 90%",
-    end: "top 30%",
+    start: "0% 50%",
+    end: "30% 50%",
     scrub: 1,
     // pin:true,
   },
@@ -70,6 +70,7 @@ gsap.from(".section-3-right div,.section-3-right button", {
     opacity: 0,
     duration: 0.5,
     stagger: 0.5,
+    
     scrollTrigger: {
       trigger: ".section-3-right div",
       scroller: "body",
@@ -77,6 +78,7 @@ gsap.from(".section-3-right div,.section-3-right button", {
       start: "top 90%",
       end: "top 40%",
       scrub: 1,
+  
       // pin:true,
     },
   });
